@@ -1,24 +1,18 @@
 <template>
-  <v-app>
-    <VToolbar app dark color="grey">
-      <VToolbarTitle class="headline text-uppercase">
-        <span>SRM_XY</span>
-      </VToolbarTitle>
-      <VSpacer></VSpacer>
-    </VToolbar>
-
-    <v-content>
-      <router-view></router-view>
-    </v-content>
-  </v-app>
+  <VApp>
+      <Header />
+      <RouterView />
+  </VApp>
 </template>
 
 <script>
 
+  import Header from './components/items/Header';
+
 export default {
   name: 'App',
   components: {
-
+    Header
   },
   data () {
     return {
@@ -27,3 +21,6 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+    @import "style/index.scss";
+</style>

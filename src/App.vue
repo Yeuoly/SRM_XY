@@ -1,7 +1,11 @@
 <template>
   <VApp>
       <Header />
-      <RouterView />
+      <KeepAlive>
+          <RouterView>
+              <ViewsNotFound></ViewsNotFound>
+          </RouterView>
+      </KeepAlive>
   </VApp>
 </template>
 

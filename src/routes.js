@@ -5,6 +5,7 @@ const Index = () => import('./components/views/Index');
 const AboutMe = () => import('./components/views/AboutMe');
 const Project = () => import('./components/views/Project');
 const Contact = () => import('./components/views/Contact');
+const NotFound = () => import('./components/views/NotFound');
 
 Vue.use(VueRouter);
 
@@ -26,5 +27,8 @@ export const router = new VueRouter({
         path : '/contact',
         name : 'contact',
         component : Contact
+    },{
+        path : '*',
+        component : NotFound
     },]
 });

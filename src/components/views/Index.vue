@@ -1,8 +1,6 @@
 <template>
     <div>
-        <VCarousel :height="$vuetify.breakpoint.mdAndUp ? $vuetify.breakpoint.height : 400"
-                   :class="$vuetify.breakpoint.mdAndUp ? 'mt-5' : 'mt-0'"
-        >
+        <VCarousel :height="componentHeight">
             <VCarouselItem v-for="(t , key) in msg" :key="key" :src="t.img">
                 <VCard class="index-carousel-card" flat>
                     <h1 class="index-carousel-card-textbox">
@@ -38,8 +36,6 @@
         name: "Index",
         data(){
             return{
-                length : 3,
-                onBoarding : 1,
                 msg : [{
                     text : '欢迎来到我的网站',
                     img : 'http://i2.bvimg.com/689260/5a6fa2c802460762.png'
@@ -47,6 +43,13 @@
                     text : '这是一个单纯的欢迎界面啦',
                     img : 'http://i2.bvimg.com/689260/f8145eb781232d76.jpg'
                 }]
+            }
+        },
+        computed : {
+            componentHeight(){
+                return this.$vuetify.breakpoint.mdAndUp
+                    ? this.$vuetify.breakpoint.height
+                    : 400;
             }
         },
         methods: {

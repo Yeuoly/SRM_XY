@@ -2,9 +2,9 @@
   <VApp>
       <Header />
       <KeepAlive>
-          <RouterView>
-              <ViewsNotFound></ViewsNotFound>
-          </RouterView>
+          <VSlideYTransition mode="out-in">
+              <RouterView></RouterView>
+          </VSlideYTransition>
       </KeepAlive>
   </VApp>
 </template>

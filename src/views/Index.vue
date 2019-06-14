@@ -1,6 +1,6 @@
 <template>
     <div>
-        <VCarousel :height="componentHeight">
+        <VCarousel :height="componentHeight" :cycle="false">
             <VCarouselItem v-for="(t , key) in msg" :key="key" :src="t.img">
                 <VCard class="index-carousel-card" flat>
                     <h1 class="index-carousel-card-textbox">
@@ -16,6 +16,7 @@
                 <li>Vue-Router，Vue官网推出的Vue路由，将会给您带来更好的前端浏览体验</li>
                 <li>Vuetify，Vuetify基于Vue与Material Design，是一个强大的Vue组件库</li>
                 <li>MaterialDashBoard，基于bootstrap4的一个UI设计</li>
+                <li>部分代码直接来源于见齐（Jannchie）的开源项目：biliob</li>
             </MaterialCard>
             <MaterialCard title="一些必要知道的">
                 <li>
@@ -34,14 +35,17 @@
 <script>
     export default {
         name: "Index",
-        data(){
-            return{
-                msg : [{
-                    text : '欢迎来到我的网站',
-                    img : 'http://i2.bvimg.com/689260/5a6fa2c802460762.png'
-                },{
-                    text : '这是一个单纯的欢迎界面啦',
-                    img : 'http://i2.bvimg.com/689260/f8145eb781232d76.jpg'
+        data() {
+            return {
+                msg: [{
+                    text: '欢迎来到我的网站',
+                    img: 'https://s2.ax1x.com/2019/06/08/VDuHG8.png'
+                }, {
+                    text: '这是一个单纯的欢迎界面啦',
+                    img: 'https://s2.ax1x.com/2019/06/08/VDuXrj.png'
+                }, {
+                    text: '开源的',
+                    img: 'https://s2.ax1x.com/2019/06/14/V43UW6.png'
                 }]
             }
         },
@@ -63,7 +67,7 @@
 <style scoped>
     .index-carousel-card{
         position: relative;
-        background: rgba(0,0,0,.24);
+        background-color: rgba(0,0,0,.35) !important;
         height: 100%;
         width: 100%;
     }

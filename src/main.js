@@ -4,7 +4,7 @@ import App from './App.vue'
 
 import './components'
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = !process.env.VUE_APP_DEV_TOOL;
 
 import { router } from "./routes"
 

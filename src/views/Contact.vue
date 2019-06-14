@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    import HeaderSpacer from "../common/HeaderSpacer";
+    import HeaderSpacer from "../components/common/HeaderSpacer";
     export default {
         name: "Contact",
         components: {HeaderSpacer}

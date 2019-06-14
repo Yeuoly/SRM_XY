@@ -1,11 +1,11 @@
 import VueRouter from 'vue-router'
 import Vue from 'vue'
 
-const Index = () => import('./components/views/Index');
-const AboutMe = () => import('./components/views/AboutMe');
-const Project = () => import('./components/views/Project');
-const Contact = () => import('./components/views/Contact');
-const NotFound = () => import('./components/views/NotFound');
+const Index = () => import('./views/Index');
+const AboutMe = () => import('./views/AboutMe');
+const Project = () => import('./views/Project');
+const Contact = () => import('./views/Contact');
+const NotFound = () => import('./views/NotFound');
 
 Vue.use(VueRouter);
 

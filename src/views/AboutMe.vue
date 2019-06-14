@@ -14,7 +14,7 @@
             </li>
             <li>
                 <VCard>
-                    <VCardTitle>下面是我编程的学习历程</VCardTitle>
+                    <VCardTitle>下面是我编程的学习历程，中二模式，on!</VCardTitle>
                     <VCardText>
                         <VTimeline align-top dense>
                             <VTimelineItem small
@@ -46,7 +46,7 @@
 </template>
 
 <script>
-    import HeaderSpacer from "../common/HeaderSpacer";
+    import HeaderSpacer from "../components/common/HeaderSpacer";
     export default {
         name: "AboutMe",
         components: {HeaderSpacer},
@@ -61,10 +61,10 @@
                     base : [
                         '可以叫我星宇，也可以叫我芸璃，这俩是同一个人，也就是SRM_XY和Yeuoly。',
 
-                        '是个死宅，喜欢二次元（划重点，认真的，不想被迫风评被害），不过没什么追新番的动力了，' +
+                        '是个死宅，不过没什么追新番的动力了，' +
                         '某种方面是现在的新番确实不大和我的胃口，很少看到我认为是精品的番。'
                         ,
-                        '喜欢的番大多是像《轻音少女》《New Game》这样的番，当然，《Fate》系列《魔禁》系列也都还行。',
+                        '喜欢的番大多是像《k-on》《New Game》这样的番，当然，《Fate》系列《魔禁》系列也都还行。',
 
                         '游戏基本不玩，一方面是以前玩得太多了，现在差不多也都厌倦了；二是觉得有点浪费时间，' +
                         '比起在游戏上花这么多时间，我宁愿多写几行代码。',

@@ -3,6 +3,7 @@ import './plugins/vuetify'
 import App from './App.vue'
 
 import './components'
+import './style/googleicon.css'
 
 Vue.config.productionTip = !process.env.VUE_APP_DEV_TOOL;
 

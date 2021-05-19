@@ -1,7 +1,23 @@
 <template>
     <VContainer>
         <HeaderSpacer />
-        <MaterialProgressCard :value="30"
+        <MaterialProgressCard :value="90"
+                              :small-value="100"
+                              title="FxxkXSS"
+                              sub-text="一个专注于后台XSS攻击的工具"
+                              @click="toFxxkXSS"
+        >
+        </MaterialProgressCard>
+        <p style="height: 20px"></p>
+        <MaterialProgressCard :value="90"
+                              :small-value="100"
+                              title="YeuolyDanmuJi"
+                              sub-text="一个具有比较高自定义性的B站直播弹幕姬"
+                              @click="toFxxkXSS"
+        >
+        </MaterialProgressCard>
+        <p style="height: 20px"></p>
+        <MaterialProgressCard :value="35"
                               :small-value="100"
                               title="YueolyBlog_FrontEnd"
                               sub-text="一个信息流产品的前端"
@@ -55,6 +71,9 @@
             },
             toDDStation(){
                 this.github('DDStation','KenAtlas')
+            },
+            toFxxkXSS(){
+                this.github('FxxkXSS');
             }
         }
     }
